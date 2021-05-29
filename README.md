@@ -60,7 +60,7 @@ Build local image from repo
         -p 587:587 \
         -e maildomain=mail.example.com \
         -e smtp_user=user:pwd \
-        -e dkimselector=mail \
+        -e dkimselector=default \
         -v /path/to/domainkeys:/etc/opendkim/domainkeys \
         --name postfix \
         -d kingsquare/postfix
@@ -74,7 +74,7 @@ Build local image from repo
 	    -p 587:587 \
         -e maildomain=mail.example.com \
         -e smtp_user=user:pwd \
-        -e dkimselector=mail \
+        -e dkimselector=default \
         -v /path/to/etc/opendkim:/etc/opendkim \
         --name postfix \
         -d kingsquare/postfix
